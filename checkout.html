@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/47491cff78.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <article class="navbar">
+        <div class="logo"><a href="index.html"><img src="tree logo.png" alt="" height="40px" width="40px"></a></div>
+        <div class="hamburger"><i class="fa-sharp fa-solid fa-bars"></i></div>
+        <div class="navbar-right">
+            <div><a href="index.html">Home</a></div>
+            <div><a href="contact.html">Contact</a></div>
+            <div class="cart">
+                <a href="cart.html">
+                    Cart<i class="fa-solid fa-cart-shopping fa-lg"></i>
+                    <div class="counter">X</div>
+                </a>
+            </div>
+        </div>
+    </article>
+
+    <article class="formCheckout">
+        <div class="total-amount">
+            Total Amount = $
+        </div>
+        
+        <div class="input-group">
+            <div class="label">Full Name</div>
+            <div class="position">
+                <input class="input-bar" type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
+                <span id="name-error"></span>
+            </div>
+                <span id="name-success"></span>
+            </div>
+            
+        </div>
+
+        <div class="input-group">
+            <div class="label">Phone Number</div>
+            <div class="position">
+                <input class="input-bar" type="text" placeholder="Enter your phone number" id="contact-number" onkeyup="validateNum()">
+                <span id="phoneNum-error"></span>
+            </div>
+            <span id="phoneNum-success"></span>
+
+        </div>
+
+        <div class="input-group">
+            <div class="label">Email Address</div>
+            <div class="position">
+                <input class="input-bar" type="text" placeholder="Enter your email address" id="contact-email" onkeyup="validateEmail()">
+                <span id="email-error"></span>
+            </div>
+           
+            <span id="email-success"></span>
+        </div>
+
+        <div class="input-group">
+            <div class="label">Your Message</div>
+            <div class="position">
+                <textarea class="input-bar" rows="5" type="text" placeholder="Enter your message" id="contact-message" onkeyup="validateMessage()"></textarea>
+                <span id="message-error"></span>
+            </div>
+            <span id="message-success"></span>
+        </div>
+
+        <div class="submit-box">
+            <button onclick="submit()" class="submit">Submit</button>
+            <span id="submit-error">Please fix error(s)</span>
+        </div>
+
+    </article>
+
+    <div class="send">
+
+    </div>
+    
+
+
+<script src="checkout.js"></script>
+</body>
+</html>

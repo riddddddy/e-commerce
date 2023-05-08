@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/47491cff78.js" crossorigin="anonymous"></script>
+</head>
+
+    <article class="navbar">
+        <div class="logo"><a href="index.html"><img src="tree logo.png" alt=""  height="40px" width="40px"></a></div>
+        <div class="hamburger"><i class="fa-sharp fa-solid fa-bars"></i></div>
+        <div class="navbar-right">
+            <div><a href="index.html">Home</a></div>
+            <div><a href="contact.html">Contact</a></div>
+            <div class="cart">
+                <a href="cart.html">
+                    Cart<i class="fa-solid fa-cart-shopping fa-lg"></i>
+                    <div class="counter">X</div>
+                </a>
+            </div>
+        </div>
+    </article>
+
+    <div class="header1">
+        <h2>My Shopping Cart</h2>
+    </div>
+
+    <div class="buttons-section">
+        <button><a href="checkout.html">Checkout</a></button>
+        <button onclick="clearItemsinCart()" class="clearCart">Clear Cart</button>
+    </div>
+
+    <article class="shoppingCart">
+        
+        <div class="shoppingCartItem">
+            <img src="" alt="" width="100px" height="100px">
+            <div class="info">
+                <div>Titleee</div>
+                <div>Price</div>
+                <div class="button-quantity">
+                    <div><i class="fa-solid fa-square-minus fa-xl"></i></div>
+                    <div>Quantity:</div>
+                    
+                </div>
+                <div>Total Price</div>
+            </div>
+            
+        </div>
+    </article>
+
+</head>
+<body>
+    
+
+<script src="cart.js"></script>
+</body>
+</html>

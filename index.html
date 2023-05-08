@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/47491cff78.js"></script>
+</head>
+<body>
+    
+    <article class="navbar">
+        <div class="logo"><a href="index.html"><img src="tree logo.png" alt="" height="40px" width="40px"></a></div>
+        <div class="hamburger"><i class="fa-sharp fa-solid fa-bars"></i></div>
+        <div class="navbar-right">
+            <div href="#home" class="home">Home</div>
+            <div href="#contact" class="contact">Contact</div>
+            <div href="#reviews-section" class="reviews">Reviews</div>
+            <div><a href="faqs.html">FAQs</a></div>
+            <div class="cart">
+                <a href="cart.html">
+                    Cart<i class="fa-solid fa-cart-shopping fa-lg"></i>
+                    <div class="counter">X</div>
+                </a>
+            </div>
+        </div>
+    </article>
+
+    <article id="home">
+        <div class="main-title">Catalogue</div>
+        <div class="search-box-x">
+            <input class="search-box" type="text" placeholder="Search item">
+            <button onclick="reset()">x</button>
+        </div>
+        
+    </article>
+
+    <article class="categories">
+        <button class="all">ALL</a></button>
+    </article>
+
+    <div class="filter-btn">
+        <button class="best-seller">Best Seller</button>
+        <button class="low">Hot Selling</button>
+
+    </div>
+
+    <article class="shoppingItems">
+        <!-- <div class="shopItem">
+            <img id="img" src="" alt="" width="150px" height="150px">
+            <div id="title">Title</div>
+            <div id="price">Price</div>
+            <div id="description">Description</div>
+        </div>
+
+        <div class="shopItem">
+            <img id="img" src="" alt="" width="150px" height="150px">
+            <div id="title">Title</div>
+            <div id="price">Price</div>
+            <div id="description">Description</div>
+        </div> -->
+    </article>
+
+    <article id="reviews-section" class="reviews-section">
+        <div class="title">Reviews from our trustworthy customers</div>
+        
+        <div class="review-card">
+            <div class="img-container">
+                <img class="review-photo" src="tree logo.png" alt="">
+            </div>
+           
+            <div class="review-name"></div>
+            <div class="job"></div>
+            <div class="review-description"></div>
+            <div>
+                <button onclick="previous()">Previous</button>
+                <button onclick="next()">Next</button>
+            </div>
+            <div>
+                <button onclick="random()">Random Review</button>
+            </div>
+
+        </div>
+
+        
+    </article>
+
+    <div id="contact">
+        <div class="info">
+            <div>Contact Information</div>
+            <div>We are located at </div>
+            <div>Hougang St 92 Block 965 #02-86 </div>
+            <div>Singapore 530965</div>
+            <div>Contact No : 97654231</div>
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31909.30752883573!2d103.87739099999999!3d1.37860495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da165c9aa4780f%3A0x6eb2b3e1b7165c1c!2sSingapore%20530965!5e0!3m2!1sen!2ssg!4v1683052790360!5m2!1sen!2ssg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+        
+    </div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
